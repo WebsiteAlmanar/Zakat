@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&family=Poppins:wght@700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nanum+Gothic:wght@800&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat+Alternates:wght@500&family=Nanum+Gothic:wght@800&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;500;400;300&family=Montserrat+Alternates:ital,wght@0,500;1,400&family=Nanum+Gothic:wght@800&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat+Alternates:ital,wght@0,500;1,400&family=Montserrat+Subrayada&family=Nanum+Gothic:wght@800&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat+Alternates:ital,wght@0,500;1,300&family=Montserrat+Subrayada&family=Montserrat:wght@300&family=Nanum+Gothic:wght@800&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+
+.badan {
+    position: absolute;
+    width: 100%;
+    max-width:1440px;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), #27215E;
+}
+
+.zakat {
+    position: absolute;
+    width: 70%;
+    height: 21%;
+    top: -7%;
+    left: 25%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 180%;
+    line-height: 150%;
+    /* identical to box height */
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.tulisan {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    left: 20%;
+    top: 12%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 150%;
+    text-align: right;
+    color: #FFFFFF;
+}
+.tulisan p{
+    width: 65%;
+    left: 30%;
+}
+
+
+.zkt {
+    position: absolute;
+    width: 55%;
+    height: 70%;
+    left: -25%;
+    top: -10%;
+    filter: drop-shadow(0px -5px 4px rgba(231, 227, 255, 0.25)) drop-shadow(-10px 5px 10px rgba(231, 227, 255, 0.25));
+}
+
+
+.kotakzakat {
+    position: absolute;
+    width: 90%;
+    height: 130%;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 50%;
+}
+.kotakzakat a{
+    position:relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+.slider{
+    overflow: hidden;
+}
+
+.kalkulator{
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 400px;
+    scroll-snap-align: center;
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: white;
+    transform-origin: center center;
+    transform: scale(1);
+}
+.kalkulator, .bayar-zakat {
+    position: absolute;
+    background-color: #FFFFFF;
+    border-width: 10px;
+    border-radius: 15px;
+    width: 45%;
+    
+}
+.kalkulator{
+    height: 90%;
+    top: 5%;
+}
+
+.slide__prev,
+.slide__next {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: solid #ABABAB;
+  border-width: 2px 2px 2px 2px;
+  padding: 3px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.slide__next{
+
+    top: 10%;
+    left: 40%;
+}
+.slide__prev{
+    top: 10%;
+    left: 2%;
+}
+
+.slide__next:hover, .slide__prev:hover{
+    background-color: #ABABAB ;
+    color: white;
+}
+
+.fitrah, .maal, .fidyah, .profesi {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+
+
+
+.bayar-zakat{
+    height: 100%;
+    margin-left: 55%;
+}
+.kalkulator img{
+    margin-top: 6%;
+    margin-left: 20%;
+}
+.bayar-zakat img {
+    width: 13%;
+    height: 10%;
+    margin-top: 3%;
+    margin-left: 27%;
+}
+
+.kalkulator p, .bayar-zakat p {
+    width: 261px;
+    height: 37px;
+    left: 174px;
+    top: 36px;
+    color: #474747;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+    text-align: center;
+}
+.bayar-zakat p{
+    font-size: 50px;
+    margin-top: -12%;
+    margin-left: 30%;
+}
+.kalkulator p{
+    margin-top: -9%;
+    margin-left: 30%;
+}
+
+.kalkulator h2, .bayar-zakat h2 {
+    width: 252px;
+    height: 24px;
+    left: 58px;
+    top: 120px;
+    font-family: 'Montserrat Subrayada';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #8D8D8D;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+.kalkulator h3, .bayar-zakat h3 {
+    width: 70%;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #8D8D8D;
+    margin-left: 9.5%;
+    margin-top: 15%;
+}
+.kalkulator h3{
+    margin-top: 8%;
+}
+.bayar-zakat h4 {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #8D8D8D;
+    margin-left: 9%;
+    margin-top: 5%;
+}
+.pilihzakat{
+    width: 32%;
+    height: 5%;
+    box-shadow: 0px 4px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 5%;
+}
+ .kotakzakat h6{
+    width: 90%;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #717171;
+}
+.kotaka, .kotakd, .pilih1{
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    margin-left: 8%;
+    margin-top: 7%;
+    background: #FFFFFF;
+    border: 2px solid #ababab;
+    border-radius: 9px 0px 0px 9px;
+}
+.kotakd, .pilih1{
+    width: 23.8%;
+    border-radius: 0px 9px 9px 0px;
+    margin-left: 68%;
+    margin-top: 35%;
+}
+
+.kotaka h2, .kotakd h2, .pilih1 p,
+.kotakb input,
+.kotakb ::placeholder, .kotakc input, .kotakc ::placeholder, .kotakhasil input, .kotakhasil ::placeholder{
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33.3333px;
+    line-height: 41px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #595959;
+    margin-top: 21%;
+    margin-left: 15%;
+}
+.maal.kotakhasil{
+    top: -100%;
+}
+
+.kotakd h2, .pilih1{
+    margin-top: 12%;
+    margin-left: 7%;
+}
+
+.kotaka h1, .kotakd h1, .pilih1{
+    position: absolute;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+    margin-top: -35%;
+}
+.kotakd h1, .pilih1{
+    margin-top: -23%;
+    margin-left: -250%;
+}
+
+.pilih1 :focus, .pilih1:active{
+    outline: none;
+}
+.pilih1{
+    width: 354%;
+    height: 80%;
+    border-radius: 9px 9px 9px 9px;
+    top: -235%;
+    left: -3%;
+}
+
+
+.maal h1, .fidyah h1, .profesi h1{
+    width: 1000%;
+}
+.kotakb input, .kotakc input, .kotakhasil input {
+    position: absolute;
+    width: 68%;
+    height: 9.7%;
+    margin-left: 23%;
+    margin-top: 7%;
+    background-color: #FFFFFF;
+    border: 2px solid #ababab;
+    border-radius: 0px 9px 9px 0px;
+}
+.kotakhasil input{
+    border: 0px;
+    margin-left: 9%;
+    margin-top: -5%;
+}
+.kotakc input{
+    margin-left: 23%;
+    margin-top: 35%;
+    border-radius: 9px 0px 0px 9px;
+    margin-left: 8%;
+    width: 82%;
+}
+.kotakb input:focus, .kotakc input:focus, .kotakhasil input:focus {
+    outline: none;
+}
+
+.kalkulator h4{
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    margin-top: 60%;
+    margin-left: 8.5%;
+}
+.bayar-zakat h4{
+    color: #333333;
+}
+.pilih{
+    border: solid #FFFFFF;
+}
+.ayozakat h1{
+    position: absolute;
+    width: 70%;
+    height: 30%;
+    top:250%;
+    left: 30%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 112px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.tombolzkt {
+    position: absolute;
+    width: 29%;
+    height: 6%;
+    margin-left: 62%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 50%;
+    border: solid #595959;
+}
+
+.tombolzkt p {
+    width: 130%;
+    margin-top: 3%;
+    margin-left: 7%;
+    font-family: 'Montserrrat Alternates';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #595959;
+}
+.bayar-zakat .kotaka h1{
+    width: 500%;
+    margin-top: -30%;
+    color: #595959;
+}
+.bayar-zakat .kotaka{
+    margin-top: 20%;
+}
+.bayar-zakat .kotakb{
+    margin-top: 18.8%;
+}
+
+.zktt {
+    text-decoration: none;
+}
+
+.program {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    left: 5%;
+    top: 300%;
+    border-radius: 8.59432px;
+}
+.program h1, .berita h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 112px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 35%
+}
+.program .latar1, .program .latar2, .program .latar3{
+    position: absolute;
+    width: 30%;
+    height: 60%;    
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.program .latar1{margin-left: 0%;}.program .latar2{margin-left:35%}.program .latar3{margin-left: 70%;}
+.program .atas1, .program .atas2, .program .atas3{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), #699B9E;
+    border-radius: 20px 20px 0px 0px;
+}
+.program .atas1{margin-left: 0%;}.program .atas2{margin-left: 35%;}.program .atas3{margin-left: 70%;}
+.program .latar1 h2, .program .latar2 h2, .program .latar3 h2{
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 42px;
+    color: #000000;
+    margin-top: -13%;
+    margin-left: 3%;
+}
+.program .latar1 img,.program .latar2 img, .program .latar3 img{
+    width: 15%;
+    height: 15%;
+    margin-top: 70%;
+    margin-left: 3%;
+}
+.program .latar1 h3, .program .latar2 h3, .program .latar3 h3{
+    width: 180%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: -42%;margin-left: 22%;
+}
+.tmbl1 {
+    position: absolute;
+    width: 26%;
+    height: 8%;
+    left: 500.23px;
+    top: 500px;
+    border: 7px;
+    background: #FFBF19;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Ligconsolata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: -55%;
+    margin-left: -143%;
+}
+
+.tmbl1 p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tmbl1 p:hover {
+    color: #000000;
+    transition: 200ms ease-in-out;
+} 
+
+
+.program h2 {
+    position: absolute;
+    width: 500.77px;
+    height: 64.46px;
+    top: 220.2px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38.6744px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.program h3 {
+    position: absolute;
+    width: 99px;
+    height: 52px;
+    top: 380px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34.3474px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.berita{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    top: 410%;
+    border-radius: 8.59432px;
+}
+.berita .berita1, .berita .berita2{
+    position: absolute;
+    width: 45%;
+    height: 55%;    
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.berita .berita2{
+    left: 55%;
+}
+.berita h2{
+    position: absolute;
+    margin-top: 45%;
+    width: 90%;
+    margin-left: 5%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #000000;
+}
+.berita h3{
+    position: absolute;
+    margin-top: 62.75%;
+    margin-left: 68%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    text-align: justify;
+    color: #000000;
+}
+.berita .tmbl1{
+    width: 20%;
+    margin-top: -47%;
+    margin-left: -105%;
+}
+.berita img{
+    position:absolute;
+    margin-top: 62%;
+    margin-left: 90%;
+}
+.berita .atas{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background: #C4C4C4;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.nextprev{
+    margin-top: 245%;
+}
+.nomor {
+    width: 7%;
+    height: 10%;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 42px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.n1 {
+    left: 36.5%;
+}
+
+.n2 {
+    left:46.5%;
+}
+
+.n3 {
+    left: 56.5%;
+}
+
+.kiri {
+    font-family: 'Nanum Gothic';
+    border-radius: 100px;
+    transform: rotate(-180deg);
+    left: 26.5%;
+}
+
+.kanan {
+    font-family: 'Nanum Gothic';
+    border-radius: 100px;
+    transform: rotate(-180deg);
+    left: 66.5%;
+}

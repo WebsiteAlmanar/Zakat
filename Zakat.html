@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style/Zakat1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <meta name="viewport" content="width+device-width, initial-scale=1, maximum-scale=1">
+    <title>Zakat</title>
+    <script type="text/javascript">
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("kalkulator");
+            if (n > x.length) {slideIndex = 1};
+            if (n < 1) {slideIndex = x.length};
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+    <script>
+        function hasilfitrah() {
+            var nmnl = document.getElementById('nominal').value;
+            var jml = document.getElementById('jumlah').value;
+            var hsl = parseInt(nmnl) * parseInt(jml);
+            if (!isNaN(hsl)) {
+                document.getElementById('hasil').value = hsl;
+            }
+            else{
+                hsl=0;
+                document.getElementById('hasil').value = hsl;
+            }
+        }
+        function hasilmaal() {
+            var nmnl = document.getElementById('nominal1').value;
+            var hsl = (25 * parseInt(nmnl))/1000;
+            if (!isNaN(hsl)) {
+                document.getElementById('hasil1').value = hsl;
+            }
+            else{
+                hsl=0;
+                document.getElementById('hasil1').value = hsl;
+            }
+        }
+        function hasilfidyah() {
+            var nmnl = document.getElementById('nominal2').value;
+            var jml = document.getElementById('jumlah2').value;
+            var hsl = parseInt(nmnl) * parseInt(jml);
+            if (!isNaN(hsl)) {
+                document.getElementById('hasil2').value = hsl;
+            }
+            else{
+                hsl=0;
+                document.getElementById('hasil2').value = hsl;
+            }
+        }
+        function hasilprofesi() {
+            var nmnl = document.getElementById('nominal3').value;
+            var hsl = (25 * parseInt(nmnl))/1000;
+            if (!isNaN(hsl)) {
+                document.getElementById('hasil3').value = hsl;
+            }
+            else{
+                hsl=0;
+                document.getElementById('hasil3').value = hsl;
+            }
+        }
+    </script>
+</head>
+
+<body class="badan">
+    <div class="tulisan">
+        <img class="zkt" src="media/p_zakat.png">
+        <h1 class="zakat">ZAKAT</h1>
+        <p class="tulisan">Mengeluarkan Zakat tidak akan membuat harta anda berkurang, dengan Zakat akan menambah berkah harta yang anda miliki.</p>
+    </div>
+    <div class="kotakzakat">    
+            <div class="kalk_hitung">
+                <div class="kalkulator fitrah">
+                    <img src="media/p_rp.png" alt="">
+                    <p>Kalkulator Zakat</p>
+                    <h2>AYO HITUNG ZAKATMU !</h2>
+                    <h6>zakat fitrah</h6>
+                    <h3>wajib bagi tiap muslim untuk mengeluarkan zakat di Bulan Ramadhan</h3>
+                    <div class="kotaka">
+                        <h1>nominal</h1>
+                        <h2>Rp.</h2>
+                    </div>
+                    <form class="kotakb">
+                        <input type="text" id="nominal" class="kotakinput" placeholder="0" onkeyup="hasilfitrah();">
+                    </form>
+                    <form class="kotakc">
+                        <input type="text" id="jumlah" class="kotakinput" placeholder="0" onkeyup="hasilfitrah();">
+                    </form>
+                    <div class="kotakd">
+                        <h1>jumlah orang</h1>
+                        <h2>orang</h2>
+                    </div>
+                    <form class="kotakhasil" action="" >
+                        <h4>Total Zakat Fitrah</h4>
+                        <input type="text" id="hasil" readonly placeholder="0">
+                    </form>                   
+                </div>
+
+                <div class="kalkulator maal">
+                    <img src="media/p_rp.png" alt="">
+                    <p>Kalkulator Zakat</p>
+                    <h2>AYO HITUNG ZAKATMU !</h2>
+                    <h6>zakat maal</h6>
+                    <h3>masukkan jumlah harta dan kalkulator kami akan menghitung jumlah zakat anda</h3>
+                    <div class="kotaka">
+                        <h1>jumlah kekayaan (tiap tahun)</h1>
+                        <h2>Rp.</h2>
+                    </div>
+                    <form class="kotakb">
+                        <input type="text" id="nominal1" class="kotakinput" placeholder="0" onkeyup="hasilmaal();">
+                    </form>
+                    <form class="kotakhasil" action="" >
+                        <h4>Zakat Maal Kamu</h4>
+                        <input type="text" id="hasil1" readonly placeholder="0">
+                    </form>
+                </div>
+                <div class="kalkulator fidyah">
+                    <img src="media/p_rp.png" alt="">
+                    <p>Kalkulator Zakat</p>
+                    <h2>AYO HITUNG ZAKATMU !</h2>
+                    <h6>fidyah</h6>
+                    <h3>wajib bagi seorang yang berat menjalankan puasa, membayar fidyah (memberi makan seorang miskin)</h3>
+                    <div class="kotaka">
+                        <h1>nominal</h1>
+                        <h2>Rp.</h2>
+                    </div>
+                    <form class="kotakb">
+                        <input type="text" id="nominal2" class="kotakinput" placeholder="0" onkeyup="hasilfidyah();">
+                    </form>
+                    <form class="kotakc">
+                        <input type="text" id="jumlah2" class="kotakinput" placeholder="0" onkeyup="hasilfidyah();">
+                    </form>
+                    <div class="kotakd">
+                        <h1>jumlah hari</h1>
+                        <h2>hari</h2>
+                    </div>
+                    <form class="kotakhasil" action="" >
+                        <h4>Fidyah Kamu</h4>
+                        <input type="text" id="hasil2" readonly placeholder="0">
+                    </form>                   
+                </div>
+                <div class="kalkulator profesi">
+                    <img src="media/p_rp.png" alt="">
+                    <p>Kalkulator Zakat</p>
+                    <h2>AYO HITUNG ZAKATMU !</h2>
+                    <h6>zakat profesi</h6>
+                    <h3>masukkan jumlah hartamu dan kalkulator kami akan menghitung jumlah zakat anda</h3>
+                    <div class="kotaka">
+                        <h1>gaji (tiap bulan)</h1>
+                        <h2>Rp.</h2>
+                    </div>
+                    <form class="kotakb">
+                        <input type="text" id="nominal3" class="kotakinput" placeholder="0" onkeyup="hasilprofesi();">
+                    </form>
+                    <form class="kotakhasil" action="" >
+                        <h4>Zakat Profesi Kamu</h4>
+                        <input type="text" id="hasil3" readonly placeholder="0">
+                    </form>
+                </div>
+                <button class="slide__prev" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="slide__next" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+        <div class="bayar-zakat">
+            <img src="media/p_rp.png" alt="">
+            <p>Zakat</p>
+            <h2>AYO BAYAR ZAKATMU !</h2>
+            <h3>pilih jenis zakat dan masukkan jumlah zakat yang anda bayarkan</h3>
+            <h4>jenis zakat</h4>
+            <div class="kotakd pilih">
+            <select class="pilih1">
+                <option value="0"><p>pilih zakat...</p></option>
+                <option value="1"><p>zakat fitrah</p></option>
+                <option value="2"><p>zakat maal</p></option>
+                <option value="3"><p>zakat profesi</p></option>
+                <option value="4"><p>fidyah</p></option>
+            </select>
+            </div>
+            <div class="kotaka">
+                <h1>besar zakat</h1>
+                <h2>Rp.</h2>
+            </div>
+            <li class="kotakb" type="none">
+                <input type="text" class="kotakinput" placeholder="0">
+            </li>
+            <div class="tombolzkt">
+                <a href="Lanjut-Zakat.html" class="zktt">
+                    <p>bayar zakat</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="ayozakat">
+        <h1>Ayo Kita Zakat !</h1>
+    </div>
+    <div class="program">
+        <h1>PROGRAM</h1>
+        <div class="latar1">
+            <h2 >Program Ustad Pinggiran</h2>
+            <img src="media/p_logo.png" alt="">
+            <h3>Yayasan Al-Manar</h3>
+            <a href="#" class="tmbl1">
+                <p>Lanjut</p>
+            </a>
+        </div>
+        <div class="latar2">
+            <h2>Program Pendidikan TK</h2>
+            <img src="media/p_logo.png" alt="">
+            <h3>Yayasan Al-Manar</h3>
+            <a href="#" class="tmbl1">
+                <p>Lanjut</p>
+            </a>
+        </div>
+        <div class="latar3">
+            <h2>Program Anak Yatim</h2>
+            <img src="media/p_logo.png" alt="">
+            <h3>Yayasan Al-Manar</h3>
+            <a href="#" class="tmbl1">
+                <p>Lanjut</p>
+            </a>
+        </div>
+        <div class="atas1"></div>
+        <div class="atas2"></div>
+        <div class="atas3"></div>
+    </div>    
+    <card class="berita">
+        <h1>BERITA</h1>
+        <div class="berita1">
+            <h2>Penyaluran Infaq untuk Ustadz di Pinggiran Wilayah</h2>
+            <img src="media/p_lokasi.png" alt="">
+            <h3>Surabaya</h3>
+            <a href="#" class="tmbl1">
+                <p>Lanjut</p>
+            </a>
+            <div class="atas"></div>
+        </div>
+        <div class="berita2">
+            <h2>Penyaluran Infaq untuk Ustadz di Pinggiran Wilayah</h2>
+            <img src="media/p_lokasi.png" alt="">
+            <h3>Surabaya</h3>
+            <a href="#" class="tmbl1">
+                <p>Lanjut</p>
+            </a>
+            <div class="atas"></div>
+        </div>
+        
+    </card>
+    <div class="nextprev">
+        <a href="#" class="nomor kiri">></a>
+        <a href="#" class="nomor n1">1</a>
+        <a href="#" class="nomor n2">2</a>
+        <a href="#" class="nomor n3">3</a>
+        <a href="#" class="nomor kanan"><</a>
+    </div>
+</body>
+
+</html>

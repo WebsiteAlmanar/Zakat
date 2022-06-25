@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style/Lanjut-Pembayaran.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <meta name="viewport" content="width+device-width, initial-scale=1, maximum-scale=1">
+    <title>Pembayaran Infaq</title>
+    <script type="text/javascript">
+        function tampilkan(){
+            var nilai=document.getElementById("form1").pembayaran.value;
+            var keluaran=document.getElementById("tampil");
+            if (nilai=="0")
+                {
+                    keluaran.innerHTML="Anda Belum Memilih Metode";
+                }
+            else if (nilai=="1")
+                {
+                    keluaran.innerHTML='<h2>transfer bank mandiri</h2><img src="media/b_mandiri.png"/>';
+                }
+            else if (nilai=="2")
+                {
+                    keluaran.innerHTML='<h2>&nbsp;&nbsp;&nbsptransfer bank bri</h2><img src="media/b_bri.png"/>';
+                }
+            else if (nilai=="3")
+                {
+                    keluaran.innerHTML='<h2>&nbsp;&nbsp;&nbsptransfer bank bni</h2><img src="media/b_bni.png"/>';
+                }
+            else if (nilai=="4")
+                {
+                    keluaran.innerHTML='<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsptransfer dana</h2><img src="media/b_dana.png"/>';              
+                }
+                else if (nilai=="5")
+                {
+                    keluaran.innerHTML='<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsptransfer ovo</h2><img src="media/b_ovo.png"/>';                
+                }
+            else if (nilai=="6")
+                {
+                    keluaran.innerHTML='<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsptransfer linkaja</h2><img src="media/b_linkaja.jpg"/>';                    
+                }
+            else if (nilai=="7")
+                {
+                    keluaran.innerHTML='<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspscan qris</h2><img src="media/b_qris.png"/>';       
+                }
+        }
+    </script>
+</head>
+
+<body class="badan">
+    <div class="atas"><center>Al-Manar</center></div>
+    <div class="kotak-atas">
+        <p class="p p1">anda akan berdonasi untuk</p>
+        <p class="p p2">Program Infaq <br> Yayasan Al-Manar</p>
+    </div>
+    <div class="kotak-bawah">
+        <li class="row">
+            <form id="form1" name="form1" onsubmit="return false">
+            <h1>Metode Pembayaran</h1>
+                <select class="pilih1" id="pembayaran" name="pembayaran" onchange="tampilkan()">
+                    <option value="0"><p>pilih metode pembayaran</p></option>
+                    <option value="1">Transfer Bank Mandiri</option>
+                    <option value="2">Transfer Bank BRI</option>
+                    <option value="3">Transfer Bank BNI</option>
+                    <option value="4">Transfer Dana</option>
+                    <option value="5">Transfer OVO</option>
+                    <option value="6">Transfer LinkAja</option>
+                    <option value="7">Scan QRIS</option>
+                </select>
+            </form>
+            <div class="tampil" id="tampil"></div>
+            <center><h2 id="tampil"></h2></center>
+        </li>
+        
+        <div class="row bayar">
+            <h1>Bank Tujuan</h1>
+        </div>
+        <li class="row upload">
+            <a href="#" class="btn dlm"><p>pilih file</p></a>
+            <p>upload bukti transaksi</p>
+        </li>
+        <a href="#" class="btn slsi"><p>selesai</p></a>
+    </div>
+</body>
+
+</html>
